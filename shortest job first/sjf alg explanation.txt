@@ -1,0 +1,23 @@
+Shortest Job First scheduling works on the process with the shortest burst time or duration first.
+
+*This is the best approach to minimize waiting time.
+*This is used in Batch Systems.
+
+To successfully implement it, the burst time/duration time of the processes should be known to the
+processor in advance, which is practically not feasible all the time.
+This scheduling algorithm is optimal if all the jobs/processes are available at the same time. 
+(either Arrival time is 0 for all, or Arrival time is same for all)
+
+Consider the processes available in the ready queue for execution, 
+with arrival time as 0 for all and given burst times.
+
+to view the processes and ghant chart just click on image in the folder(filename:"sjf image")
+
+here is the explanation of ghant chart
+As you can see in the GANTT chart above, the process P4 will be picked up first as 
+it has the shortest burst time, then P2, followed by P3 and at last P1.
+
+We scheduled the same set of processes using the First come first serve algorithm
+ in the previous tutorial, and got average waiting time to be 18.75 ms, whereas with SJF,
+ the average waiting time comes out 4.5 ms.
+
