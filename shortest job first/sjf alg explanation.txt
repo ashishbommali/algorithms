@@ -13,11 +13,5 @@ with arrival time as 0 for all and given burst times.
 
 to view the processes and ghant chart just click on image in the folder(filename:"sjf image")
 
-here is the explanation of ghant chart
-As you can see in the GANTT chart above, the process P4 will be picked up first as 
-it has the shortest burst time, then P2, followed by P3 and at last P1.
-
-We scheduled the same set of processes using the First come first serve algorithm
- in the previous tutorial, and got average waiting time to be 18.75 ms, whereas with SJF,
- the average waiting time comes out 4.5 ms.
+for clear understanding just draw the ghant chart for all the processes and try to figure out the outputs
 
