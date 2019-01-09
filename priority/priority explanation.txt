@@ -1,0 +1,16 @@
+Priority scheduling is a non-preemptive algorithm and one of the most common scheduling algorithms in batch systems.
+Each process is assigned a priority. Process with the highest priority is to be executed first and so on.
+Processes with the same priority are executed on first come first served basis. 
+Priority can be decided based on memory requirements, time requirements or any other resource requirement.
+Implementation :
+
+1- First input the processes with their burst time 
+   and priority.
+2- Sort the processes, burst time and priority
+   according to the priority.
+3- Now simply apply FCFS algorithm.
+
+the processes with arrival time 0 are discussed. In next set,
+we will be considering different arrival times to evaluate waiting times.
+
+the ghant chart and graphical explanation is available in "priority image" in the folder
