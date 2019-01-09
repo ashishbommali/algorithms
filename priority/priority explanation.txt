@@ -13,4 +13,4 @@ Implementation :
 the processes with arrival time 0 are discussed. In next set,
 we will be considering different arrival times to evaluate waiting times.
 
-the ghant chart and graphical explanation is available in "priority image" in the folder
+for clear understanding just draw the ghant chart for all the processes and try to figure out the outputs
