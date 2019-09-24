@@ -1,0 +1,45 @@
+//  ----------->     PRIME PROGRAM USING SEIVE METHOD
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n,k;
+	cout<<"enter value of n : ";
+	cin>>n;
+	int arr[n];
+	
+	// our task is to make all the elements except primes as 1's , so as we know 0,1 are not primes we made them 1's .
+	
+	
+	arr[1]=arr[0]=1;
+	
+	//inserting all the elements btw (2,n ) into Array.
+	for(int i=2;i<=n;i++)
+	{
+		arr[i]=i;
+	}
+	//memset(arr,0,sizeof(arr));
+	
+	//the elements which are not primes will be updated as 1's  in this below loop.
+	for(int i=2;i*i<=n;i++)
+	{
+		k=i*2;
+		while(k<=n)
+		{
+			arr[k]=1;
+			// The Values here are not primes  i.e . those elements are divisible by i (here) 
+			k=k+i;
+		}
+		
+	}
+	// Now our Array has only primes and rest elements as 1 .
+	for(int i=2;i<=n;i++)
+	{
+		if(arr[i]!=1){
+			cout<<i<<" ";
+		}	
+			
+	}
+	cout<<endl;
+}
